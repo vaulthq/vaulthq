@@ -2,7 +2,7 @@ $font-family-sans-serif: 'Montserrat', "Helvetica Neue", Helvetica, Arial, sans-
 
 $navbar-border-radius:              none;
 //$navbar-padding-horizontal:         $spacer !default;
-$navbar-padding-vertical:           2.4rem;
+//$navbar-padding-vertical:           2.4rem;
 
 $my-blue: #63B7E7 !default;
 
@@ -13,14 +13,48 @@ $my-blue: #63B7E7 !default;
   box-shadow: 0 5px 8px rgba(0,0,0,.25);
 }
 
-.background-blue {
+.vault-logo {
+  height: 90px;
+  width: 90px;
+}
+
+.navbar-light {
+  .navbar-nav {
+    padding-top: 2rem;
+    .nav-link {
+      color: #CCC;
+      padding: 0.4rem 1.2rem;
+
+      @include hover-focus {
+        color: #FFF;
+        background: $my-blue;
+        @include border-radius(5rem);
+      }
+    }
+
+    .open > .nav-link,
+    .active > .nav-link,
+    .nav-link.open,
+    .nav-link.active {
+      @include plain-hover-focus {
+        color: #FFF;
+        background: $my-blue;
+        padding: 0.4rem 1.2rem;
+        @include border-radius(5rem);
+      }
+    }
+  }
+}
+
+body, .background-blue {
   background: $my-blue;
 }
 
 .section-intro {
   color: white;
   padding-top: 11rem;
-  padding-bottom: 5vh;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   text-transform: uppercase;
 
   h1 {
@@ -39,6 +73,15 @@ $my-blue: #63B7E7 !default;
     font-size: 0.9rem;
     box-shadow: 2px 2px 5px rgba(0,0,0,.2);
   }
+
+  .preview-image {
+    margin-top: 5vh;
+    background: url('/preview.png') center center no-repeat;
+    height: 591px;
+    width: 100%;
+  }
+
+
 }
 
 .mini-divider {
