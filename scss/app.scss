@@ -1,0 +1,55 @@
+$font-family-sans-serif: 'Montserrat', "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$navbar-border-radius:              none;
+//$navbar-padding-horizontal:         $spacer !default;
+$navbar-padding-vertical:           2.4rem;
+
+$my-blue: #63B7E7 !default;
+
+
+@import "bower_components/bootstrap/scss/bootstrap.scss";
+
+.navbar {
+  box-shadow: 0 5px 8px rgba(0,0,0,.25);
+}
+
+.background-blue {
+  background: $my-blue;
+}
+
+.section-intro {
+  color: white;
+  padding-top: 11rem;
+  padding-bottom: 5vh;
+  text-transform: uppercase;
+
+  h1 {
+    font-size: 3.2rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  .btn-start {
+    margin-top: 5vh;
+    @include button-variant($btn-secondary-color, $btn-secondary-bg, #FFFFFF);
+    color: $my-blue;
+    padding: 1rem 3rem;
+    font-size: 0.9rem;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.2);
+  }
+}
+
+.mini-divider {
+  color: white;
+  width: 11rem;
+  height: 1px;
+  border-bottom: 1px solid white;
+  margin: 1.5rem auto;
+
+}
+
+.strong {
+  font-weight: bold;
+}
