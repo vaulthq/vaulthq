@@ -1,0 +1,17 @@
+{
+  "name": "vault-web",
+  "version": "0.0.0",
+  "description": "VaultHQ Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Valdas Kalvaitis",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.0"
+  },
+  "devDependencies": {
+    "gulp-sass": "^2.0.4"
+  }
+}

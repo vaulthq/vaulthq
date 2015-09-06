@@ -1,0 +1,19 @@
+{
+  "name": "vault-web",
+  "version": "0.0.0",
+  "authors": [
+    "Valdas Kalvaitis <valdas@kalvaitis.eu>"
+  ],
+  "license": "MIT",
+  "homepage": "http://vaulthq.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~4"
+  }
+}
