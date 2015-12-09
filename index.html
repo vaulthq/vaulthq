@@ -4,13 +4,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css" integrity="sha256-IRdVFzQDbQWesbf3Vl7aPfv83kyxsP6mAFJrA4tWvdk=" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="/css/app.css">
   </head>
   <body>
-    <nav class="navbar navbar-light bg-faded">
+    <nav class="navbar navbar-dark bg-inverse" style="background-color: #0F1212">
       <div class="container">
-        <a class="navbar-brand" href="/"><img src="vault_logo.svg" class="vault-logo"></a>
+        <a class="navbar-brand" href="/">
+          <img src="/img/logo.svg" class="vault-logo"> VAULT
+        </a>
         <ul class="nav navbar-nav pull-right hidden-xs-down">
           <li class="nav-item active">
             <a class="nav-link" href="/">Home</a>
@@ -19,25 +22,29 @@
             <a class="nav-link" href="http://demo.vaulthq.com">Demo</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://github.com/private-vault/vault">GitHub</a>
+            <a class="nav-link" href="https://github.com/vaulthq/vault">GitHub</a>
           </li>
         </ul>
       </div>
     </nav>
 
-    <section class="background-blue text-center section-intro">
-      <h1 class="strong">Welcome to Vault</h1>
+    <section class="text-center section-intro">
+      <div class="container">
+
+      <h1 class="strong">****** manager</h1>
       <div class="mini-divider"></div>
-      <h4>Safely store and share your passwords with others</h4>
+      <h4>Store, share and manage your secrets securely</h4>
 
-      <a href="https://github.com/private-vault/vault/wiki/Installation-instructions" class="btn btn-start">Get started Now</a>
+      <a href="https://github.com/vaulthq/vault/wiki/Installation-instructions" class="btn btn-info btn-start">Get started Now</a>
 
-      <div class="preview-image hidden-xs-down"></div>
 
+          <img src="/img/preview.png" class="img-responsive preview-image">
+
+
+    </div>
 
     </section>
-    <!-- jQuery first, then Bootstrap JS. -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+    <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js" integrity="sha256-immOTkGssa9xlwGLLEKw4fq4j5qNr5Dkpch3wUeTkGs=" crossorigin="anonymous"></script>
   </body>
 </html>
