@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css" integrity="sha256-IRdVFzQDbQWesbf3Vl7aPfv83kyxsP6mAFJrA4tWvdk=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="/css/app.css">
     <script>
@@ -18,7 +18,7 @@
     </script>
   </head>
   <body>
-    <nav class="navbar navbar-dark bg-inverse" style="background-color: #0F1212">
+    <nav class="navbar navbar-dark bg-inverse">
       <div class="container">
         <a class="navbar-brand" href="/">
           <img src="/img/logo.svg" class="vault-logo"> VAULT
@@ -39,20 +39,76 @@
 
     <section class="text-center section-intro">
       <div class="container">
+        <h1 class="strong"><span class="js-toggle">******</span> manager</h1>
+        <div class="mini-divider"></div>
+        <h4>It's time to forget problems, not passwords.</h4>
 
-      <h1 class="strong">****** manager</h1>
-      <div class="mini-divider"></div>
-      <h4>Store, share and manage your secrets securely</h4>
+        <a href="https://demo.vaulthq.com" class="btn btn-warning btn-demo">Demo</a>
+        <a href="https://github.com/vaulthq/vault/wiki/Installation-instructions" class="btn btn-info btn-start">Installation Guide</a>
 
-      <a href="https://github.com/vaulthq/vault/wiki/Installation-instructions" class="btn btn-info btn-start">Get started Now</a>
-
-      <img src="/img/preview.png" class="img-responsive preview-image">
-    </div>
+        <img src="/img/preview.png" class="img-responsive preview-image">
+      </div>
 
     </section>
+
+    <section class="section-overview">
+      <div class="container">
+        <h2 class="text-center">Vault? What?</h2>
+
+        <p>
+          Have you ever had your passwords stored in text file? Or on a sticky note? Delivered by email? Or were they on that Excel file which you have lost?
+        </p>
+        <p>
+          That kind of secret storage is insecure, slow and unreliable. <strong>Vault is a web based tool</strong> to solve password and other secret information storage and sharing problems.
+        </p>
+
+        <h2 class="text-center">Vault Overview</h2>
+
+        <div class="row">
+          <div class="col-sm-6">
+            <h3>Security as #1 priority</h3>
+            <p>Every secret in Vault is encrypted using RSA private-public key encryption. This ensures that data is not readable even if storage was breached.</p>
+          </div>
+          <div class="col-sm-6">
+            <h3>Created for teams</h3>
+            <p>Secrets are grouped by projects. It is possible to easily share all secrets in project, or if you do not want such loose control, you can also share them individually.</p>
+          </div>
+        </div>
+
+        <div class="row overview-second-line">
+          <div class="col-sm-6">
+            <h3>Powerful integrations</h3>
+            <p>Vault provides an API. This allows external software to communicate with Vault, making integrations such as  automated deployment tools, browser extensions possible.</p>
+          </div>
+          <div class="col-sm-6">
+            <h3>Free &amp; Open Source</h3>
+            <p>What could be better than free, community driven software? </p>
+          </div>
+        </div>
+
+        <div class="text-center"><a href="https://github.com/vaulthq/vault/wiki/Installation-instructions" class="btn btn-info btn-start">Get started now!</a></div>
+
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p class="pull-left">Contact us: <a href="mailto:support@vaulthq.com">support@vaulthq.com</a></p>
+        <p class="pull-right">2014-2015 vaulthq.com</p>
+      </div>
+    </footer>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js" integrity="sha256-immOTkGssa9xlwGLLEKw4fq4j5qNr5Dkpch3wUeTkGs=" crossorigin="anonymous"></script>
+    <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+
+    <script>
+    $(document).ready(function() {
+      $('.js-toggle').mouseover(function() {
+        $(this).html('secret');
+      }).mouseout(function() {
+        $(this).html('******');
+      })
+    });
+    </script>
   </body>
-
-
 </html>

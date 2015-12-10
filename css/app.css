@@ -2,6 +2,9 @@ body {
   background: #0F1212;
   font-family: 'Open Sans', sans-serif; }
 
+.navbar-dark {
+  background-color: #0F1212; }
+
 .vault-logo {
   height: 30px;
   float: left;
@@ -19,11 +22,45 @@ body {
     font-size: 3.2rem; }
   .section-intro h4 {
     font-size: 1rem; }
-  .section-intro .btn-start {
-    background-color: #00B2D6;
-    padding: 14px 50px;
-    margin-top: 30px;
-    border-radius: 0;
-    border: none; }
   .section-intro .preview-image {
     margin-top: 10vh; }
+
+.btn-start, .btn-demo {
+  padding: 14px 50px;
+  margin-top: 30px;
+  border-radius: 0;
+  border: none; }
+
+.btn-start {
+  background-color: #00B2D6; }
+  .btn-start:hover {
+    background-color: #00c7f0; }
+
+.btn-demo {
+  background-color: #EEF200;
+  color: #0F1212; }
+  .btn-demo:hover {
+    background-color: #fbff0c;
+    color: #0F1212; }
+
+.section-overview {
+  background-color: #FFF;
+  padding-bottom: 5rem; }
+  .section-overview h2 {
+    padding: 3rem;
+    color: #00B2D6;
+    text-transform: uppercase; }
+  .section-overview p {
+    text-align: justify;
+    line-height: 1.7em;
+    margin-top: 1rem; }
+
+.overview-second-line {
+  margin-top: 3rem; }
+
+footer {
+  padding: 1rem; }
+  footer a {
+    color: #00B2D6; }
+    footer a:hover {
+      color: #5A68B1; }
